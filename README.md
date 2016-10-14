@@ -87,5 +87,5 @@ which disables complexity-changing assertions.
 ## Contact
 
 Speculative Paxos is a product of the
-[UW Systems Lab](http://syslab.cs.washington.edu"). Please email Dan
+[UW Systems Lab](http://syslab.cs.washington.edu/). Please email Dan
 Ports at drkp@cs.washington.edu with any questions.
