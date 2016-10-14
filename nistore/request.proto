@@ -1,0 +1,26 @@
+package nistore;
+
+message Request {
+     enum Operation {
+     	  BEGIN = 1;
+          GET = 2;
+          PUT = 3;
+          PREPARE = 4;
+          COMMIT = 5;
+          ABORT = 6;
+     }	
+     
+     required Operation op = 1;
+     required uint64 txnid = 2;
+     optional string arg0 = 3;
+     optional string arg1 = 4;
+}
+
+message Reply {
+     // 0 = OK
+     // -1 = failed
+     // -2 = retry
+     // -3 = abstain/no reply
+     required int32 status = 1;
+     optional string value = 2;
+}
